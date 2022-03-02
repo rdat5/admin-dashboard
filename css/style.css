@@ -53,3 +53,80 @@ body
     background-color: red;
     justify-self: center;
 }
+
+.header
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.header .search
+{
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+    align-items: center;
+}
+.header .search input
+{
+    width: 80%;
+    border-radius: 2rem;
+}
+.header .user
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    gap: 2rem;
+}
+.header .user .notif-bell,
+.header .user .pfp-small
+{
+    background-color: blue;
+}
+.header .greeting
+{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 1rem;
+}
+.header .greeting .pfp
+{
+    grid-row: 1 / 3;
+    justify-self: flex-start;
+}
+.header .greeting .pfp
+{
+    place-self: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: blue;
+}
+.header .greeting p
+{
+    align-self: center;
+    padding-left: 1rem;
+}
+.header .greeting .big-name
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header .buttons
+{
+    display: flex;
+    height: 2.5rem;
+    align-self: center;
+    justify-self: flex-end;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+.header .buttons button
+{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 6rem;
+    font-size: 1rem;
+}
