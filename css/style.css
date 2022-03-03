@@ -130,3 +130,68 @@ body
     width: 6rem;
     font-size: 1rem;
 }
+
+.content
+{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.content .your-projects
+{
+    margin: 1rem;
+    grid-row: 1 / 3;
+
+    display: flex;
+    flex-direction: column;
+}
+.content .your-projects h1
+{
+    margin-bottom: 1rem;
+}
+.content .your-projects .projects
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+.content .your-projects .projects .card
+{
+    background-color: antiquewhite;
+}
+
+.content .your-projects .projects .card
+{
+    border-radius: 5%;
+}
+.content .your-projects .projects .card .card-container
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 0.8rem;
+    gap: 0rem;
+}
+.content .your-projects .projects .card .card-container h2
+{
+    flex-grow: 0;
+    font-size: inherit;
+}
+.content .your-projects .projects .card .card-container .card-desc
+{
+    flex: 1;
+    font-size: inherit;
+}
+.content .your-projects .projects .card .card-container .card-buttons
+{
+    display: flex;
+    flex-grow: 0;
+    align-self: flex-end;
+    gap: 1rem;
+    font-size: inherit;
+}
+.content .your-projects .projects .card .card-container .card-buttons p
+{
+    font-size: inherit;
+}
