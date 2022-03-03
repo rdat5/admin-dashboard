@@ -212,6 +212,8 @@ body
     font-size: 0.8rem;
     padding: 1rem;
     border-radius: 5%;
+    max-width: 75ch;
+    min-width: 45ch;
 }
 .announcements .announce-box .announce-item
 {
