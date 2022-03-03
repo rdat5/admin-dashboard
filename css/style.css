@@ -195,3 +195,31 @@ body
 {
     font-size: inherit;
 }
+
+.announcements
+{
+    padding: 1rem;
+}
+.announcements .announce-contents
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.announcements .announce-box
+{
+    background-color: bisque;
+    font-size: 0.8rem;
+    padding: 1rem;
+    border-radius: 5%;
+}
+.announcements .announce-box .announce-item
+{
+    font-size: inherit;
+    padding: 0.5rem;
+}
+.announcements .announce-box .announce-item h3,
+.announcements .announce-box .announce-item p
+{
+    font-size: inherit;
+}
