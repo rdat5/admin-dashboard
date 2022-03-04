@@ -247,9 +247,11 @@ body
     font-size: inherit;
 }
 .trending .trending-box .trending-item h3,
-.trending .trending-box .trending-item p
+.trending .trending-box .trending-item p,
+.trending .trending-box .trending-item .pfp
 {
     font-size: inherit;
+    margin: 0.2rem;
 }
 .trending .trending-box .trending-item .pfp
 {
