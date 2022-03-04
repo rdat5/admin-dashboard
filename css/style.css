@@ -237,12 +237,19 @@ body
     border-radius: 5%;
     display: grid;
     gap: 1rem;
+    font-size: 0.8rem;
 }
 .trending .trending-box .trending-item
 {
     display: grid;
     grid-template-columns: 2.5rem auto;
     grid-template-rows: 1fr 1fr;
+    font-size: inherit;
+}
+.trending .trending-box .trending-item h3,
+.trending .trending-box .trending-item p
+{
+    font-size: inherit;
 }
 .trending .trending-box .trending-item .pfp
 {
