@@ -225,3 +225,27 @@ body
 {
     font-size: inherit;
 }
+
+.trending
+{
+    padding: 1rem;
+}
+.trending .trending-box
+{
+    background-color: gainsboro;
+    padding: 1rem;
+    border-radius: 5%;
+    display: grid;
+    gap: 1rem;
+}
+.trending .trending-box .trending-item
+{
+    display: grid;
+    grid-template-columns: 2.5rem auto;
+    grid-template-rows: 1fr 1fr;
+}
+.trending .trending-box .trending-item .pfp
+{
+    background-color: red;
+    grid-row: 1 / 3;
+}
