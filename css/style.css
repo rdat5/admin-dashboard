@@ -70,10 +70,14 @@ body
     padding-left: 1rem;
     align-items: center;
 }
-.header .search input
+.header .search input[type="text"]
 {
     width: 80%;
-    border-radius: 2rem;
+    border-radius: 1rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.3rem;
 }
 .header .user
 {
@@ -83,10 +87,9 @@ body
     margin-right: 2rem;
     gap: 2rem;
 }
-.header .user .notif-bell,
 .header .user .pfp-small
 {
-    background-color: blue;
+    border-radius: 1rem;
 }
 .header .greeting
 {
