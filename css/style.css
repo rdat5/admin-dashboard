@@ -164,48 +164,32 @@ body
 .content .your-projects .projects
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: repeat(2, minmax(10rem, 1fr));
+    gap: 1rem;
 }
 .content .your-projects .projects .card
 {
     background-color: antiquewhite;
-}
-
-.content .your-projects .projects .card
-{
-    border-radius: 5%;
-}
-.content .your-projects .projects .card .card-container
-{
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
+    border-radius: 1vw;
+}
+.card .card-container
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    height: 100%;
+}
+.card .card-container .card-desc
+{
     font-size: 0.8rem;
-    gap: 0rem;
 }
-.content .your-projects .projects .card .card-container h2
-{
-    flex-grow: 0;
-    font-size: inherit;
-}
-.content .your-projects .projects .card .card-container .card-desc
-{
-    flex: 1;
-    font-size: inherit;
-}
-.content .your-projects .projects .card .card-container .card-buttons
+.card .card-container .card-buttons
 {
     display: flex;
-    flex-grow: 0;
-    align-self: flex-end;
+    justify-content: flex-end;
     gap: 1rem;
-    font-size: inherit;
-}
-.content .your-projects .projects .card .card-container .card-buttons p
-{
-    font-size: inherit;
 }
 
 .announcements
