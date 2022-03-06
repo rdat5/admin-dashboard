@@ -2,7 +2,7 @@
 
 :root
 {
-    --color1: #2de1fcff;
+    --color1: #157887;
     --color2: #2afc98ff;
 }
 
@@ -62,6 +62,7 @@ body
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .header .search
 {
@@ -97,22 +98,24 @@ body
     grid-template-columns: 15% 85%;
     padding: 1rem;
 }
-.header .greeting .pfp
+.header .greeting .pfp-big
 {
     grid-row: 1 / 3;
     justify-self: flex-start;
 }
-.header .greeting .pfp
+.header .greeting .pfp-big
 {
     place-self: center;
-    width: 3rem;
-    height: 3rem;
-    background-color: blue;
+    border-radius: 50%;
 }
 .header .greeting p
 {
     align-self: center;
     padding-left: 1rem;
+}
+.header .greeting .greet
+{
+    font-size: 0.8rem;
 }
 .header .greeting .big-name
 {
@@ -135,6 +138,9 @@ body
     border-radius: 2rem;
     width: 6rem;
     font-size: 1rem;
+    border: none;
+    background-color: var(--color1);
+    color: white;
 }
 
 .content
