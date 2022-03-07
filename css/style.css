@@ -207,12 +207,13 @@ body
 }
 .announcements .announce-box
 {
-    background-color: bisque;
+    background-color: white;
     font-size: 0.8rem;
     padding: 1rem;
-    border-radius: 5%;
+    border-radius: 8px;
     max-width: 75ch;
     min-width: 45ch;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.256);
 }
 .announcements .announce-box .announce-item
 {
