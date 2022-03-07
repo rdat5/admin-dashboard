@@ -4,6 +4,7 @@
 {
     --color1: #157887;
     --color2: #2afc98ff;
+    --color3: rgb(235, 235, 235);
 }
 
 *
@@ -75,7 +76,7 @@ body
 {
     width: 80%;
     border-radius: 1rem;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--color3);
     border: none;
     font-size: 0.7rem;
     padding: 0.3rem;
@@ -148,6 +149,7 @@ body
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--color3);
 }
 .content .your-projects
 {
@@ -170,9 +172,10 @@ body
 }
 .content .your-projects .projects .card
 {
-    background-color: antiquewhite;
+    background-color: white;
     padding: 1rem;
-    border-radius: 1vw;
+    border-radius: 8px;
+    box-shadow: -5px 0px 0 0 var(--color2), 0px 3px 8px rgba(0, 0, 0, 0.256);
 }
 .card .card-container
 {
